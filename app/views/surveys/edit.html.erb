@@ -1,7 +1,4 @@
 <h1>Edit survey</h1>
 
-<%= form_for @survey do |f| %>
-  <%= f.label :topic %>
-  <%= f.text_field :topic %>
-  <%= f.submit %>
-<% end %>
+
+<%= render "layouts/survey_form" %>

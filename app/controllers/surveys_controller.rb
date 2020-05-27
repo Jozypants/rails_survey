@@ -13,6 +13,7 @@ class SurveysController < ApplicationController
   def create
     @survey = Survey.new(survey_params)
     if @survey.save
+      flash[:notice] = "Survery created! Gerd Jerb!"
       redirect_to surveys_path
     else
       render :new
